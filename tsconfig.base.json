@@ -17,6 +17,7 @@
     "paths": {
       "@sala-ui/button": ["packages/button/src/index.ts"],
       "@sala-ui/footer": ["packages/footer/src/index.ts"],
+      "@sala-ui/form": ["packages/form/src/index.ts"],
       "@sala-ui/grid": ["packages/grid/src/index.ts"],
       "@sala-ui/header": ["packages/header/src/index.ts"],
       "@sala-ui/searchBar": ["packages/searchBar/src/index.ts"]
