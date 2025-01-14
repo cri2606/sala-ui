@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@sala-ui/button": ["packages/button/src/index.ts"],
-      "@sala-ui/grid": ["packages/grid/src/index.ts"]
+      "@sala-ui/grid": ["packages/grid/src/index.ts"],
+      "@sala-ui/header": ["packages/header/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
