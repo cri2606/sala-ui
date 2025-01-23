@@ -1,6 +1,6 @@
 import styles from './searchBar.module.css';
 
-export function SearchBar() {
+export const SearchBar = () => {
   return (
       <div className="flex rounded-md border-2 border-blue-500 overflow-hidden max-w-md mx-auto font-[sans-serif]">
       <input type="email" placeholder="Search Something..."
