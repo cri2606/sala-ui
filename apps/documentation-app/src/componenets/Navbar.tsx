@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         {/* Logo */}
         <div className="text-lg font-bold">
-          <a href="#">Logo</a>
+          <a href="#">Sala-UI</a>
         </div>
 
         {/* Hamburger Menu */}

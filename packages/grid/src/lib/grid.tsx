@@ -1,6 +1,6 @@
 import styles from './grid.module.css';
 
-export function Grid() {
+export const Grid = () => {
   return (
     <>
     {/* one column */}

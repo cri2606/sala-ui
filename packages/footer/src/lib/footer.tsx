@@ -1,6 +1,6 @@
 import styles from './footer.module.css';
 
-export function Footer() {
+export const Footer = () => {
   return (
       <footer className="bg-gray-900 text-white py-4">
         <div className="container mx-auto px-4 flex justify-between">
