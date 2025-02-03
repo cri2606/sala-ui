@@ -1,10 +1,15 @@
 import React from "react";
-
+import { Button } from "@sala-ui/button";
+import { Footer } from "@sala-ui/footer";
+import { Form } from "@sala-ui/form";
+import { Grid } from "@sala-ui/grid";
+import { Header } from "@sala-ui/header";
+import { SearchBar } from "@sala-ui/searchBar";
 export const Components = [
     {
         name: "Button",
-        htmlCode: `<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
-        `,
+        children: Button,
+        htmlCode: `<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>`,
         jsxCode: 
 `export const Button = () => { 
     return ( 
@@ -15,6 +20,7 @@ export default Button;`
     },
     {
         name: "Footer",
+        children: Footer,
         htmlCode: 
 `<footer class="bg-gray-900 text-white py-4">
   <div class="container mx-auto px-4 flex justify-between">
@@ -82,6 +88,7 @@ export default Footer;`
     },
     {
         name: "Form",
+        children: Form,
         htmlCode: 
 `<div class="w-full max-w-xs">
   <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -149,6 +156,7 @@ export default Form;`
     },
     {
         name: "Grid",
+        children: Grid,
         htmlCode: 
 `<!-- one column -->
 <div class="flex mb-4">
@@ -250,11 +258,13 @@ export default Grid;`
     },
     {
         name: "Header",
+        children: Header,
         htmlCode: ``,
         jsxCode: ``
     },
     {
-        name: "Search Bar",
+        name: "SearchBar",
+        children: SearchBar,
         htmlCode: 
 `<div class="flex rounded-md border-2 border-blue-500 overflow-hidden max-w-md mx-auto font-[sans-serif]">
   <input type="email" placeholder="Search Something..."

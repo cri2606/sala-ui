@@ -1,35 +1,80 @@
-import styles from './footer.module.css';
+import React from 'react';
 
 export const Footer = () => {
   return (
-      <footer className="bg-gray-900 text-white py-4">
-        <div className="container mx-auto px-4 flex justify-between">
-          <div>
-            <h4 className="font-bold text-sm mb-2">Home</h4>
-            <nav className="space-y-1">
-              <a href="#" className="text-xs text-gray-400 hover:text-white block">Chi Siamo</a>
-              <a href="#" className="text-xs text-gray-400 hover:text-white block">Ultime Novità</a>
+    <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-white">
+      <div className="container mx-auto px-6">
+        {/* Main footer content */}
+        <div className="py-12 flex justify-between flex-wrap gap-12">
+          <div className="min-w-[160px]">
+            <h4 className="font-semibold text-sm tracking-wider uppercase mb-4 text-slate-200">
+              Home
+            </h4>
+            <nav className="space-y-3">
+              <a 
+                href="#" 
+                className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
+              >
+                About Us
+              </a>
+              <a 
+                href="#" 
+                className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
+              >
+                Latest News
+              </a>
             </nav>
           </div>
-          <div>
-            <h4 className="font-bold text-sm mb-2">Servizi</h4>
-            <nav className="space-y-1">
-              <a href="#" className="text-xs text-gray-400 hover:text-white block">Sviluppo Web</a>
-              <a href="#" className="text-xs text-gray-400 hover:text-white block">Consulenza IT</a>
+
+          <div className="min-w-[160px]">
+            <h4 className="font-semibold text-sm tracking-wider uppercase mb-4 text-slate-200">
+              Services
+            </h4>
+            <nav className="space-y-3">
+              <a 
+                href="#" 
+                className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
+              >
+                Web Development
+              </a>
+              <a 
+                href="#" 
+                className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
+              >
+                IT Consulting
+              </a>
             </nav>
           </div>
-          <div>
-            <h4 className="font-bold text-sm mb-2">Contatti</h4>
-            <nav className="space-y-1">
-              <a href="#" className="text-xs text-gray-400 hover:text-white block">Supporto</a>
-              <a href="#" className="text-xs text-gray-400 hover:text-white block">Invia Messaggio</a>
+
+          <div className="min-w-[160px]">
+            <h4 className="font-semibold text-sm tracking-wider uppercase mb-4 text-slate-200">
+              Contact
+            </h4>
+            <nav className="space-y-3">
+              <a 
+                href="#" 
+                className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
+              >
+                Support
+              </a>
+              <a 
+                href="#" 
+                className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
+              >
+                Send Message
+              </a>
             </nav>
           </div>
         </div>
-        <div className="text-center mt-4">
-          <p className="text-xs text-gray-400">© 2025 Tutti i diritti riservati</p>
+
+        {/* Copyright section */}
+        <div className="border-t border-slate-800 py-8">
+          <p className="text-sm text-slate-500 text-center">
+            © 2025 All rights reserved
+          </p>
         </div>
-      </footer>
+      </div>
+    </footer>
   );
 }
 
