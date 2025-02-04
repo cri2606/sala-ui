@@ -21,10 +21,10 @@ export function App() {
     <div>
       <Navbar onNavbarClick={handleNavbarClick} />
       
-      {/* Mostra Hero se nessun altro componente è selezionato */}
+      {/* Show the Hero if any component is selectes */}
       {!selectedComponent && <Hero />}
 
-      {/* Mostra il componentContainer se è stato selezionato un componente */}
+      {/* Show componentContainer if a component was selected */}
       {selectedComponent && component && (
         <ComponentContainer
           name={component.name}

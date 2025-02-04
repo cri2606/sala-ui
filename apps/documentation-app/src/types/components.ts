@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@sala-ui/button";
 import { Footer } from "@sala-ui/footer";
 import { Form } from "@sala-ui/form";

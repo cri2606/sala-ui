@@ -11,7 +11,7 @@ export const CopyButton = ({ text, className }: CopyButtonProps) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(text);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Resetta dopo 2 secondi
+    setTimeout(() => setCopied(false), 2000); // Reset Copied state after 2 seconds
   };
 
   return (

@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <header className="bg-gradient-to-b from-slate-50 to-slate-100 py-16 border-b border-slate-200">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 px-6">
-        {/* Sezione sinistra */}
+        {/* Left Section */}
         <div className="text-center md:text-left md:w-1/2 flex flex-col justify-center">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
             Sala-UI
@@ -14,7 +14,7 @@ export const Hero = () => {
           </p>
         </div>
 
-        {/* Sezione destra */}
+        {/* Right Section */}
         <div className="md:w-1/2 flex flex-col justify-center bg-white rounded-2xl shadow-lg p-8 border border-slate-200">
           <h2 className="text-2xl font-semibold text-slate-800">Get started</h2>
           <p className="text-slate-600 mt-4 leading-relaxed">
