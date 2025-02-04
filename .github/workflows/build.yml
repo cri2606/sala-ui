@@ -4,7 +4,7 @@ name: Build after Push
 on:
     push:
       branches:
-        - master  # Trigger automatico dopo una push su master
+        - main  # Trigger automatico dopo una push su master
     workflow_dispatch:  # Possibilità di attivare il workflow manualmente
       inputs:
         build_type:
