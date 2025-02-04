@@ -1,22 +1,20 @@
 name: Build after Push
 
-
 on:
-    push:
-      branches:
-        - main  # Trigger automatico dopo una push su master
-    workflow_dispatch:  # Possibilità di attivare il workflow manualmente
-      inputs:
-        build_type:
-          description: "Tipo di build (esempio: fast-build, full-build)"
-          required: true
-          default: "fast-build"
-  
+  push:
+    branches:
+      - master  
+  workflow_dispatch:  
+    inputs:
+      build_type:
+        description: "Tipo di build (esempio: fast-build, full-build)"
+        required: true
+        default: "fast-build"
 
 jobs:
   build:
     runs-on: ubuntu-latest  
-  
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -25,9 +23,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install Dependencies
         run: npm install --force
 
-      - name: Run Build
-        run: npm run build
+      - name: Build App
+        run: npx nx build documentation-app
