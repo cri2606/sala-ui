@@ -1,4 +1,3 @@
-```
 # Sala-UI
 
 Sala-UI is a Tailwind CSS-based UI component library designed to simplify the creation of modern and efficient user interfaces. The library includes a selection of ready-to-use components that can be easily customized and integrated into your projects.
@@ -84,6 +83,3 @@ If you'd like to contribute to Sala-UI, feel free to submit a pull request. Any 
 ## License
 
 Distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
-```
-
-Now you can copy and paste it directly into your `README.md` file.
