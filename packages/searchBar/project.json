@@ -9,7 +9,7 @@
     "build": {
       "executor": "@nrwl/vite:build",
       "options": {
-        "outputPath": "dist/apps/documetation-app"
+        "outputPath": "dist/apps/documentation-app"
       }
     }
   }
