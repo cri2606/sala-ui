@@ -1,5 +1,3 @@
-import styles from './grid.module.css';
-
 export const Grid = () => {
   return (
     <>

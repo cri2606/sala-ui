@@ -1,49 +1,15 @@
-// import { ComponentContainer } from '../componenets/componentContainer';
-// import { Header1 } from '../componenets/Header';
-// import Navbar from '../componenets/Navbar';
-// import { Components } from '../types/components';
-// import React, { useState } from 'react';
-
-// export function App() {
-//   const [selectedComponent, setSelectedComponent] = useState(Components[0]); // Imposta "Button" come default
-
-//   const handleNavbarClick = (componentName: string) => {
-//     const component = Components.find(comp => comp.name === componentName);
-//     if (component) {
-//       setSelectedComponent(component);  // Imposta il componente selezionato
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <Navbar onNavbarClick={handleNavbarClick} />
-//       <Header1 />
-//       {/* Passa il componente come children */}
-//       <ComponentContainer
-//         name={selectedComponent.name}
-//         children={selectedComponent.children ? React.createElement(selectedComponent.children) : null}
-//         htmlCode={selectedComponent.htmlCode}
-//         jsxCode={selectedComponent.jsxCode}
-//       />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-import { Footer } from '@sala-ui/footer';
-import { ComponentContainer } from '../componenets/componentContainer';
-import { Header1 } from '../componenets/Header';
-import Navbar from '../componenets/Navbar';
+import { ComponentContainer } from '../componenets/ComponentContainer';
+import { Hero } from '../componenets/Hero';
+import { Navbar } from '../componenets/Navbar';
 import { Components } from '../types/components';
 import React, { useState } from 'react';
+import MainFooter from '../componenets/MainFooter';
 
 export function App() {
-  const [selectedComponent, setSelectedComponent] = useState<string | null>(null); // Nessun componente selezionato inizialmente
-
+  const [selectedComponent, setSelectedComponent] = useState<string | null>(null);
   const handleNavbarClick = (componentName: string) => {
     if (componentName === "GetStarted") {
-      setSelectedComponent(null); // Mostra Header1 e nasconde gli altri componenti
+      setSelectedComponent(null);
     } else {
       setSelectedComponent(componentName);
     }
@@ -55,8 +21,8 @@ export function App() {
     <div>
       <Navbar onNavbarClick={handleNavbarClick} />
       
-      {/* Mostra Header1 se nessun altro componente è selezionato */}
-      {!selectedComponent && <Header1 />}
+      {/* Mostra Hero se nessun altro componente è selezionato */}
+      {!selectedComponent && <Hero />}
 
       {/* Mostra il componentContainer se è stato selezionato un componente */}
       {selectedComponent && component && (
@@ -67,7 +33,7 @@ export function App() {
           jsxCode={component.jsxCode}
         />
       )}
-      <Footer />
+      <MainFooter />
     </div>
   );
 }

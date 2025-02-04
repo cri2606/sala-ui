@@ -1,8 +1,6 @@
-import React from 'react';
-
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-white">
+    <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-white" id="footer">
       <div className="container mx-auto px-6">
         {/* Main footer content */}
         <div className="py-12 flex justify-between flex-wrap gap-12">
