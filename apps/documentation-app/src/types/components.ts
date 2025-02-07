@@ -1,9 +1,10 @@
-import { Button } from "@sala-ui/button";
-import { Footer } from "@sala-ui/footer";
-import { Form } from "@sala-ui/form";
-import { Grid } from "@sala-ui/grid";
-import { Header }  from "@sala-ui/header";
-import { SearchBar } from "@sala-ui/searchBar";
+import { SearchBar } from "@sala-ui/searchBar"
+import { Header }  from "@sala-ui/header"
+import { Button } from "@sala-ui/button"
+import { Footer } from "@sala-ui/footer"
+import { Form } from "@sala-ui/form"
+import { Grid } from "@sala-ui/grid"
+
 export const Components = [
     {
         name: "Button",
@@ -13,10 +14,10 @@ export const Components = [
 `export const Button = () => {
   return (
     <button className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 rounded-lg text-sm font-medium transition duration-300">Button</button>
-  );
+  )
 }
 
-export default Button;`
+export default Button`
     },
     {
         name: "Footer",
@@ -154,10 +155,10 @@ export default Button;`
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
 `
     },
     {
@@ -328,10 +329,10 @@ export default Footer;
         © 2025 Your Company. All rights reserved.
       </p>
     </div>
-  );
+  )
 }
 
-export default Form;`
+export default Form`
     },
     {
         name: "Grid",
@@ -430,10 +431,10 @@ export default Form;`
       <div className="w-1/6 bg-gray-500 h-12"></div>
     </div>
     </>
-  );
+  )
 }
 
-export default Grid;`
+export default Grid`
     },
     {
         name: "Header",
@@ -475,21 +476,21 @@ export default Grid;`
   </div>
 </nav>`,
         jsxCode: 
-`import { useState } from "react";
+`import { useState } from "react"
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const links = [
     { name: "Home", label: "Home", href: "#" },
     { name: "About", label: "About", href: "#" },
     { name: "Services", label: "Services", href: "#" },
     { name: "Contact", label: "Contact", href: "#" }
-  ];
+  ]
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <nav className="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-100 shadow-lg">
@@ -558,10 +559,10 @@ export const Header = () => {
         </div>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default Header;`
+export default Header`
     },
     {
         name: "SearchBar",
@@ -589,7 +590,7 @@ export default Header;`
         </svg>
       </button>
     </div>
-  );
+  )
 }`
     },
-];
+]

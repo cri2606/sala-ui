@@ -46,7 +46,7 @@ export const Grid = () => {
       <div className="w-1/6 bg-gray-500 h-12"></div>
     </div>
     </>
-  );
+  )
 }
 
-export default Grid;
+export default Grid

@@ -86,7 +86,7 @@ export const Form = () => {
         © 2025 Your Company. All rights reserved.
       </p>
     </div>
-  );
+  )
 }
 
-export default Form;
+export default Form

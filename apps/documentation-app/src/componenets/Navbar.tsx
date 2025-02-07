@@ -1,34 +1,34 @@
-import { useState } from "react";
+import { useState } from "react"
 
 interface NavbarProps {
-  onNavbarClick: (componentName: string) => void;
+  onNavbarClick: (componentName: string) => void
 }
 
 export const Navbar = ({ onNavbarClick }: NavbarProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [activeButton, setActiveButton] = useState("GetStarted");
+  const [isOpen, setIsOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [activeButton, setActiveButton] = useState("GetStarted")
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+    setIsDropdownOpen(!isDropdownOpen)
+  }
 
   const handleClick = (componentName: string) => {
     if (componentName !== "About") {
-      setActiveButton(componentName);
-      onNavbarClick(componentName);
+      setActiveButton(componentName)
+      onNavbarClick(componentName)
     }
-    setIsOpen(false);
-    setIsDropdownOpen(false);
-  };
+    setIsOpen(false)
+    setIsDropdownOpen(false)
+  }
 
   const scrollToBottom = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  };
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })
+  }
 
   const componentLinks = [
     { name: "Button", label: "Button" },
@@ -37,7 +37,7 @@ export const Navbar = ({ onNavbarClick }: NavbarProps) => {
     { name: "Grid", label: "Grid" },
     { name: "Header", label: "Header" },
     { name: "SearchBar", label: "SearchBar" }
-  ];
+  ]
 
   return (
     <nav className="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-100 shadow-lg relative">
@@ -108,7 +108,7 @@ export const Navbar = ({ onNavbarClick }: NavbarProps) => {
         </div>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

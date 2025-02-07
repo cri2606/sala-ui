@@ -1,10 +1,9 @@
-import { render } from '@testing-library/react';
-
-import Grid from './grid';
+import { render } from '@testing-library/react'
+import Grid from './grid'
 
 describe('Grid', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Grid />);
-    expect(baseElement).toBeTruthy();
-  });
-});
+    const { baseElement } = render(<Grid />)
+    expect(baseElement).toBeTruthy()
+  })
+})

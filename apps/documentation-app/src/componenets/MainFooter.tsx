@@ -53,8 +53,8 @@ export const MainFooter = () => {
           </div>
         </div>
       </footer>
-    );
-  };
+    )
+  }
   
-  export default MainFooter;
+  export default MainFooter
   

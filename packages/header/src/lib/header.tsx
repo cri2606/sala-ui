@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useState } from "react"
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const links = [
     { name: "Home", label: "Home", href: "#" },
     { name: "About", label: "About", href: "#" },
     { name: "Services", label: "Services", href: "#" },
     { name: "Contact", label: "Contact", href: "#" }
-  ];
+  ]
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <nav className="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-100 shadow-lg">
@@ -81,8 +81,8 @@ export const Header = () => {
         </div>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
 

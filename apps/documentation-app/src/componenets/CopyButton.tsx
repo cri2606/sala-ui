@@ -1,18 +1,18 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 interface CopyButtonProps {
-  text: string;
-  className?: string;
+  text: string
+  className?: string
 }
 
 export const CopyButton = ({ text, className }: CopyButtonProps) => {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset Copied state after 2 seconds
-  };
+    navigator.clipboard.writeText(text)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000) // Reset Copied state after 2 seconds
+  }
 
   return (
     <button
@@ -23,7 +23,7 @@ export const CopyButton = ({ text, className }: CopyButtonProps) => {
     >
       {copied ? 'Copied!' : 'Copy'}
     </button>
-  );
-};
+  )
+}
 
-export default CopyButton;
+export default CopyButton

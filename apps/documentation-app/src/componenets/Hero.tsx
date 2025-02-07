@@ -1,4 +1,4 @@
-import CopyButton from './CopyButton';
+import { CopyButton } from './CopyButton'
 
 export const Hero = () => {
   return (
@@ -40,7 +40,7 @@ export const Hero = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

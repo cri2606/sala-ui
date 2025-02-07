@@ -1,1 +1,1 @@
-export * from './lib/searchBar';
+export * from './lib/searchBar'

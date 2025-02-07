@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 export const SearchBar = () => {
-  const [isFocused, setIsFocused] = useState(false);
+  const [isFocused, setIsFocused] = useState(false)
 
   return (
     <div className={`
@@ -45,7 +45,7 @@ export const SearchBar = () => {
         </svg>
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default SearchBar;
+export default SearchBar

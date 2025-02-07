@@ -1,8 +1,8 @@
-import CopyButton from './CopyButton';
+import { CopyButton } from './CopyButton'
 
 interface CodeWindowProps {
-  title: string;
-  code: string;
+  title: string
+  code: string
 }
 
 export const CodeWindow = ({ title, code }: CodeWindowProps) => {
@@ -22,7 +22,7 @@ export const CodeWindow = ({ title, code }: CodeWindowProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CodeWindow;
+export default CodeWindow

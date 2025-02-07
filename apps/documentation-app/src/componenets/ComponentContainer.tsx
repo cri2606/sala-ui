@@ -1,12 +1,12 @@
-import { ReactNode } from 'react';
-import CodeWindow from './CodeWindow';
+import { CodeWindow } from './CodeWindow'
+import { ReactNode } from 'react'
 
 export type ComponentData = {
-  name: string;
-  children: ReactNode;
-  htmlCode: string;
-  jsxCode: string;
-};
+  name: string
+  children: ReactNode
+  htmlCode: string
+  jsxCode: string
+}
 
 export const ComponentContainer = ({ name, children, htmlCode, jsxCode }: ComponentData) => {
   return (
@@ -30,7 +30,7 @@ export const ComponentContainer = ({ name, children, htmlCode, jsxCode }: Compon
         <CodeWindow title="JSX Code" code={jsxCode} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ComponentContainer;
+export default ComponentContainer
